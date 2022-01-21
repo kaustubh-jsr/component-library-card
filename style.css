@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color:rgba(236, 240, 252, 1);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(26rem,1fr));
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* ------------------- CARD BASIC STYLES------------------------ */
+.card{
+    margin: 1rem;
+    height: 32rem;
+    width: 26rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 15px 8px rgb(145, 142, 142);
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+    transition: 200ms all;
+}
+.card:hover{
+    box-shadow: 2px 2px 5px 4px rgb(145, 142, 142);
+}
+.card-basic--image{
+    width: 100%;
+}
+.card--details{
+    margin: 0 1rem;
+}
+img.card-basic--img-tag{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+header{
+    margin: 1.2rem 0;
+}
+.card--heading{
+    font-size: 2rem;
+}
+.card--subheading{
+    font-size: 1.2rem;
+    color: rgb(105, 105, 105);
+}
+
+.card--desc{
+    font-weight: 300;
+    color: rgb(105, 105, 105);
+    margin: 1rem 0;
+}
+
+.card--links{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card--footer-link{
+    padding: 8px 16px;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: blue;
+}
+a{
+    color: none;
+}
+
+.card--footer-link:hover{
+    background-color: beige;
+}
+
+.card--footer-btn{
+    height: 2rem;
+    width: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.card--footer-btn:hover{
+    border-radius: 50%;
+    background-color: beige;
+}
+
+/* ------------------- CARD TEXT OVER MEDIA STYLES------------------------ */
+
+.card--text-over-media{
+    margin: 1rem;
+    height: 25rem;
+    background-color: white;
+}
+.card-tom--image{
+    position: relative;
+}
+
+img.card-tom--img-tag{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.card-tom--header{
+    margin: -5rem 0;
+    position: absolute;
+}
+.card-tom--heading, .card-tom--subheading{
+    color: white;
+}
+.card-tom--links{
+    margin-top: 1rem;
+}
+
+/* ------------------- CARD WITH HEADER STYLES------------------------ */
+
+.card-wh--links{
+    margin: 1rem 0;
+}
+
+.card-wh--img-tag{
+    width: 100%;
+}
+.card-wh--heading, .card-wh--subheading{
+    margin: 0 0.5rem;
+}
+
+
+/* ------------------- CARD ONLY BUTTONS STYLES------------------------ */
+
+.card-ob--links{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-oi--links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* ------------------- CARD HORIZONTAL IMAGE and TEXT (HIT) STYLES------------------------ */
+.card-hit{
+    height: 12rem;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+.card-hit--image{
+    display: flex;
+    flex-flow: row nowrap;
+}
+img.card-hit--image{
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 40%;
+}
+.card-hit--header{
+    margin-left:1rem;
+}
+.card-hit--header > h1{
+    font-size: 1.2rem;
+}
+.card-hit--header > p{
+    font-size: 1rem;
+}
+.card-hit--links{
+    margin: 1rem 0;
+}
